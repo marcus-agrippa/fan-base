@@ -1,0 +1,54 @@
+
+
+// Desktop - Large 
+
+// Desktop - Small
+@media (max-width: 1600px) {
+  .grid-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  table {
+    width: 100%;
+  }
+
+
+
+
+}
+
+// Mobile
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .fixture-container {
+    width: 100%;
+    color: red;
+  }
+
+
+  table tbody td {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  table thead th {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .t-mob-hide {
+    display: none;
+  }
+
+  #news-headlines div p a {
+    text-align: center;
+  }
+
+  #news-headlines div p {
+    margin: 1rem 0;
+  }
+}

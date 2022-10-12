@@ -1,0 +1,96 @@
+@import 'config';
+
+.navbar {
+  color: #fff;
+  height: 120px;
+
+  & i{
+    color: #fff;
+    cursor: pointer;
+    padding: 0 0.5rem;
+  }
+
+  & h3 a {
+    color: #fff;
+
+    &:hover {
+      color: yellow; 
+    }
+  }
+}
+
+#navbar {
+  img {
+    width: 75px;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+
+  & .container a:active {
+    color: #242424;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 1.5rem;
+      font-weight: 600;
+      font-size: 1.35rem;
+
+      a {
+        color: #242424;
+
+        &:hover {
+          color: $font-color;
+        }
+      }
+    }
+  }
+}
+
+#bell {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#bell:hover {
+  animation: ringBell 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+
+@keyframes ringBell {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-2px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(2px);
+	}
+
+	80% {
+		transform: translateX(2px);
+	}
+
+	90% {
+		transform: translateX(-2px);
+	}
+}

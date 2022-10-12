@@ -1,0 +1,156 @@
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 3rem;
+}
+
+// Flex
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-rows {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+// Grid
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+// Margin
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 1rem;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+// Cards
+
+.card-container {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 100%;
+  padding: 30px;
+  background-color: $bg-box-color;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  h6 {
+    font-size: 2rem;
+    padding: 0 0.25rem;
+  }
+
+  img {
+    width: 150px;
+    padding: 0 2rem;
+  }
+}
+
+.card-title {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.card-matches {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 2rem;
+
+  img {
+    width: 150px;
+  }
+}
+
+.card-fixtures {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & p {
+    margin: 0 2rem;
+  }
+}
+
+.fixture-matches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: solid 2px rgba(255,255,255,0.1);
+  width: 100%;
+
+  & p {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  & div {
+    padding: 0 5rem;
+  }
+
+  & div p {
+    margin: 0;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.card-match-summary {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#summary-details {
+  color: yellow;
+}
+
+

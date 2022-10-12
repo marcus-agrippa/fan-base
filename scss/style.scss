@@ -1,0 +1,87 @@
+@import 'navbar';
+@import 'config';
+@import 'utilities';
+@import 'mobile';
+@import 'tables';
+@import 'fixtures';
+@import 'results';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $font-color;
+  background-color: $bg-color;
+  font-family: $font-stack;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#bg-color {
+  background-color: $bg-box-color;
+} 
+
+.m-1 {
+  margin: 0 0.5rem;
+}
+
+// News Headlines
+#news-headlines p a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: left;
+  font-weight: 300;
+
+  &:hover {
+    color: yellow;
+    cursor: pointer;
+  }
+}
+
+#news-headlines div p a {
+  text-align: left;
+  margin: 1rem 0;
+}
+
+#news-headlines div {
+  border-bottom: solid 2px rgba(255,255,255,0.1);
+}
+
+#news-headlines div p {
+  margin: 1rem 0;
+}
+
+#next-match-home,
+#next-match-away {
+  width: 150px;
+  margin-top: 2rem;
+}
+
+#result-team-badge-home,
+#result-team-badge-away {
+  width: 50px;
+  margin: 1rem 1rem;
+  padding: 0;
+}
+
+#next-match-info {
+  text-align: center;
+
+  span {
+    color: yellow;
+    margin-right: 1rem;
+  }
+}
+
